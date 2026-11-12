@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #111622;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  overflow-x: hidden;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.etichetta {
+  background-color: #f7e082;
+  color: #1a1a1a;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #51e2f5;
+  margin-bottom: 12px;
+}
+
+.slogan {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+}
+
+.copertina {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+/* --- PULSANTE PRINCIPALE --- */
+.pulsante {
+  display: inline-block;
+  background-color: #51e2f5;
+  color: #111622;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.pulsante:hover {
+  background-color: #3bc9db;
+}
+
+/* --- MAIN & SCHEDE --- */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.scheda {
+  background-color: #182033;
+  border: 2px solid #51e2f5;
+  border-radius: 16px;
+  padding: 35px;
+  position: relative;
+}
+
+/* Prima scheda con bordo giallo come nello screenshot */
+#dettagli {
+  border-color: #f7e082;
+}
+
+.scheda h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+#dettagli h2 {
+  color: #f7e082;
+}
+
+.scheda p {
+  font-size: 1rem;
+  color: #e0e0e0;
+  line-height: 1.5;
+}
+
+.prezzo {
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  color: #f7e082;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* --- LISTE --- */
+.scheda ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.scheda li {
+  color: #e0e0e0;
+  font-size: 1rem;
+}
+
+/* --- IMMAGINE GARAGE --- */
+.veicolo {
+  display: block;
+  width: 120px;
+  height: auto;
+  margin: 20px 0 15px 0;
+}
+
+/* --- FOOTER --- */
+footer {
+  margin-top: 50px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
