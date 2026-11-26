@@ -35,6 +35,7 @@ body {
   border-radius: 6px;
   margin-bottom: 24px;
   letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(247, 224, 130, 0.2);
 }
 
 .hero h1 {
@@ -42,6 +43,7 @@ body {
   font-weight: 700;
   color: #51e2f5;
   margin-bottom: 12px;
+  text-shadow: 0 2px 16px rgba(81, 226, 245, 0.25);
 }
 
 .slogan {
@@ -55,6 +57,8 @@ body {
   max-width: 600px;
   height: auto;
   margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
 }
 
 /* --- PULSANTE PRINCIPALE --- */
@@ -66,10 +70,19 @@ body {
   text-decoration: none;
   padding: 12px 28px;
   border-radius: 8px;
-  transition: background-color 0.2s ease;
+  box-shadow: 0 4px 14px rgba(81, 226, 245, 0.25);
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .pulsante:hover {
+  background-color: #3bc9db;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(81, 226, 245, 0.4);
+}
+
+.pulsante:focus-visible {
+  outline: 3px solid #f7e082;
+  outline-offset: 4px;
   background-color: #3bc9db;
 }
 
@@ -88,9 +101,10 @@ main {
   border-radius: 16px;
   padding: 35px;
   position: relative;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
-/* Prima scheda con bordo giallo come nello screenshot */
+/* Prima scheda con bordo giallo */
 #dettagli {
   border-color: #f7e082;
 }
@@ -134,12 +148,17 @@ main {
   font-size: 1rem;
 }
 
+.scheda li::marker {
+  color: #51e2f5;
+}
+
 /* --- IMMAGINE GARAGE --- */
 .veicolo {
   display: block;
   width: 120px;
   height: auto;
   margin: 20px 0 15px 0;
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
 }
 
 /* --- FOOTER --- */
@@ -148,4 +167,33 @@ footer {
   text-align: center;
   color: #94a3b8;
   font-size: 0.9rem;
+}
+
+/* --- SCHERMI PICCOLI --- */
+@media (max-width: 600px) {
+  body {
+    padding: 25px 15px;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .slogan {
+    font-size: 1rem;
+  }
+
+  .scheda {
+    padding: 24px 20px;
+  }
+
+  .prezzo {
+    position: static;
+    margin-top: 16px;
+    display: inline-block;
+  }
+
+  .veicolo {
+    width: 100px;
+  }
 }
